@@ -50,3 +50,35 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+
+/*case study css*/
+
+aside.case-study-sidebar {
+	float: left; 
+	width: 40%; 
+}
+
+aside.case-study-sidebar h6 {
+	color: #bbb; 
+}
+
+div.case-study-images {
+	float: left; 
+	width: 55%; 
+	margin-left: 4%; 
+
+}
+
+.return-link {
+	border-top: 1px solid #eee;
+	clear: both; 
+}
+
+.return-link a {
+	color: #bbb;
+}
+
+div.case-study-images img {
+	border: 1px solid #ddd;
+}

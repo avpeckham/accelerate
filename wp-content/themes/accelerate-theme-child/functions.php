@@ -26,7 +26,7 @@
  */
 
 function create_custom_post_types(){
-	register_post_type( 'case_studes',
+	register_post_type( 'case_studies',
 		array(
 			'labels' => array(
 				'name' => __( 'Case Studies' ), 
