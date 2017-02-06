@@ -35,6 +35,7 @@
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+	padding-top: 40px; 
 }
 
 .blog-post h2 {
@@ -81,4 +82,37 @@ div.case-study-images {
 
 div.case-study-images img {
 	border: 1px solid #ddd;
+}
+
+/*case study css for homepage*/
+.homepage-featured-work {
+	width: 100%; 
+}
+
+.homepage-featured-work li {
+	list-style-type: none;
+	float: left; 
+	width: 30%;
+	padding: 15px; 
+}
+
+.individual-featured-work figure {
+	max-height: 200px; 
+	overflow: hidden; 
+}
+
+
+/*css for case-study archive page*/
+
+.case-study {
+	margin-top: 20px; 
+}
+
+.archived-case-study-images {
+	max-height: 300px; 
+	max-width: 600px; 
+	overflow: hidden; 
+	margin-top: 3em; 
+	margin-bottom: 20px; 
+	border: 1px solid black;
 }
