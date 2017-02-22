@@ -24,10 +24,51 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+
+/*footer styles*/
+.menu-social-media-nav-container ul li {
+	list-style-type: none; 
+	display: inline-block; 
+	border-radius: 100%; 
+    background-color: black;
+
+
+    background: rgba(0,0,0,0.8);
+    margin: 0px 3px;
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.menu-social-media-nav-container a {
+	color: white; 
+}
+
+/*styles for email newsletter signup*/
+
+.newsletter-signup {
+	margin-left: 50px; 
+	border: 1px solid #BFBFBF;
+	padding: 20px 10px 0;  
+	margin-right: 70px; 
+}
+
+input.signup-button {
+	padding: 20px 70px 36px; 
+	background-color: #45ac9d; 
+	color: white; 
+}
+
+#mc4wp-form-1 p:first-of-type {
+	margin-top: 10px; 
+}
+
 /*styles for blog-post on home page*/
 
 .blog-post {
 	width: 50%; 
+	float: left; 
 }
 
 .blog-post h4 {
@@ -50,6 +91,42 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/*styles for twitter-feed on home page*/
+#secondary {
+	max-width: 35%; 
+	float: right;
+	margin-right: 150px;  
+}
+
+#pi_simpletwittertweets-2 {
+	padding-top: 17px; 
+}
+
+.tweets li {
+	list-style-type: none; 
+	font-weight: normal; 
+}
+
+.tweets:before {
+	content: "@Accelerate";
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 36px; 
+}
+
+.widget-title {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	padding-top: 40px; 
+}
+
+.widget ul {
+	margin-top: 24px; 
 }
 
 
@@ -115,4 +192,143 @@ div.case-study-images img {
 	margin-top: 3em; 
 	margin-bottom: 20px; 
 	border: 1px solid black;
+}
+
+
+/*css for ninja form contact us page*/
+
+
+.page-id-47347 #primary {
+	width: 50%; 
+}
+
+.page-id-47347 .nf-form-title {
+	display: none; 
+}
+
+.page-id-47347 .nf-field-label label {
+	font-weight: 100;
+
+}
+
+/*class to set width to equal 40% and sit side-by-side*/
+.page-id-47347 .half-width {
+	width: 49%; 
+	display: inline-block;
+}
+
+.page-id-47347 .margin-right {
+	margin-right: 1%; 
+}
+
+.page-id-47347 .contact-button-submit {
+	background-color: #45ac9d; 
+	padding: 15px 70px;
+	color: white; 
+	float: right; 
+}
+
+.page-id-47347 p {
+	font-size: 16px;
+	font-family: 'Arial';
+}
+
+/*css for about page custom template */
+.about-page-header {
+	background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	min-height: 400px; 
+	color: white; 
+}
+
+.about-page-header h1 {
+	max-width: 60%; 
+	margin: 0 auto; 
+	padding-top: 100px; 
+	font-size: 26px; 
+}
+
+.center {
+	text-align: center;
+}
+
+.brand-color {
+	color: #45ac9d;
+}
+
+article {
+	padding-bottom: 80px; 
+}
+
+.page-id-47368 .icon, .page-id-47368 .text {
+	display: inline-block; 
+}
+
+.page-id-47368 .text {
+	width: 58%;
+}
+
+.page-id-47368 .icon {
+	width: 38%; 
+}
+
+.page-id-47368 .icon img {
+	border-radius: 50%; 
+	border: 5px solid #45ac9d;
+}
+
+.page-id-47368 .services .row:nth-of-type(2n) .icon {
+	float: right; 
+}
+
+.page-id-47368 .services .row {
+	clear: both; 
+}
+
+.page-id-47368 button {
+	padding: 20px 70px; 
+	background-color: #45ac9d; 
+	color: white; 
+}
+
+.contact {
+	border-top: 1px solid grey; 
+	border-bottom: 1px solid grey; 
+
+}
+
+.contact * {
+	padding: 20px 10px;
+	display: inline-block; 
+}
+
+
+/*css for the 404 page*/
+.error404 .all{
+	width: 70%; 
+	margin: 20px auto;
+	min-height: 400px; 
+}
+
+.error404 h3 {
+	margin: 36px 0 12px;
+}
+
+.error404 .image {
+	width: 25%; 
+	overflow: hidden;
+	padding-top: 10px; 
+}
+
+.error404 .image img {
+	/*margin-top: 10px;*/
+}
+
+.error404 .image, .error404 .text {
+	display: inline-block;
+}
+
+.error404 .text {
+	width: 70%; 
+	margin-left: 20px;
+	margin-top: 40px;  
 }

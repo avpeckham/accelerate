@@ -25,6 +25,29 @@
  * @since Accelerate Marketing 1.0
  */
 
+function accelerate_iconfonts() {
+	wp_enqueue_style( 'FontAwesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
+}
+add_action( 'wp_enqueue_scripts', 'accelerate_iconfonts' );
+
+// add plugins to sidebar
+function accelerate_theme_child_widget_init() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h3 class="widget-title">',
+	    'after_title' => '</h3>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+
+// create custom post types, like case studies and services
 function create_custom_post_types(){
 	register_post_type( 'case_studies',
 		array(
@@ -37,6 +60,18 @@ function create_custom_post_types(){
 			'rewrite' => array( 'slug' => 'case-studies' ),
 		)
 	); 
+
+	register_post_type( 'services',
+		array(
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' ),
+			),
+			'public' => true,
+			'has_archive' => false,
+		)
+
+	);
 }
 
 add_action ( 'init', 'create_custom_post_types' ); 
